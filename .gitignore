@@ -1,1 +1,36 @@
-.vercel
+# Node modules
+node_modules/
+
+# Build files
+/dist/
+/build/
+/public/
+
+# Log files
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment variable files
+.env
+
+# Temporary files
+*.swp
+*.bak
+
+# Compiled code
+*.pyc
+*.class
+
+# Map files (if you're using minification or bundling)
+*.css.map
+*.js.map
+
