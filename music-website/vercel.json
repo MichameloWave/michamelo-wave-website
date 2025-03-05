@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/static/robots.txt"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "michamelowave.com"
+        }
+      ],
+      "destination": "https://www.michamelowave.com/$1",
+      "permanent": true
+    }
+  ]
+}
