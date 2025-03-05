@@ -10,6 +10,10 @@
     {
       "src": "/(.*)",
       "dest": "app.py"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/static/robots.txt"
     }
   ],
   "redirects": [
