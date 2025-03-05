@@ -11,5 +11,18 @@
       "src": "/(.*)",
       "dest": "app.py"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "michamelowave.com"
+        }
+      ],
+      "destination": "https://www.michamelowave.com/$1",
+      "permanent": true
+    }
   ]
 }
