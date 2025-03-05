@@ -6,6 +6,11 @@ node_modules/
 /build/
 /public/
 
+# Ignore everything in public except sitemap and robots
+/public/*
+!public/sitemap.xml
+!public/robots.txt
+
 # Log files
 *.log
 
@@ -33,4 +38,3 @@ Thumbs.db
 # Map files (if you're using minification or bundling)
 *.css.map
 *.js.map
-
